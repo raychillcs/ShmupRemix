@@ -9,11 +9,11 @@ To brainstorm different directions that my shmup could go, I listed off the prim
 Players must work together and aim to shoot healing projectiles at a large robot ally to keep it alive as it endures enemy fire and other obstacles. The player’s role and projectile must match the area they are healing, or it will not repair the ally. If the ally runs out of health and dies, the game is over.
 
 **Formal Elements:**
-Players: cooperative (multiple players work together with different roles)
-Objective: defend/heal (repairing and protecting an ally)
-Rules: hit box size (made smaller to put focus on precision)
-Conflict: opponents (different healing types, different enemy types; must shoot correct projectile at matching area/enemy)
+* Players: cooperative (multiple players work together with different roles)
+* Objective: defend/heal (repairing and protecting an ally)
+* Rules: hit box size (made smaller to put focus on precision)
+* Conflict: opponents (different healing types, different enemy types; must shoot correct projectile at matching area/enemy)
 
 **Puzzles/Challenges:**
-Each player has a different role or projectile that corresponds to specific area(s) and is only able to heal/repair those areas or damage certain enemies (color matching)
-Hit box sizes on large ally are relatively small, like doing surgery (precision)
+* Each player has a different role or projectile that corresponds to specific area(s) and is only able to heal/repair those areas or damage certain enemies (color matching)
+* Hit box sizes on large ally are relatively small, like doing surgery (precision)
