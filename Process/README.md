@@ -1,6 +1,6 @@
-# ShmupRemix Process
+# Shmup Remix Process
 
-## September 30, 2019: Brainstorming
+## 09.30.19: Brainstorming
 To brainstorm different directions that my shmup could go, I listed off the primary characteristics of typical shoot-em-ups and Fullerton’s Formal Elements to see what I could change mechanically and thematically about them. My favorite shmup idea was a combination of a few from the top five that I brainstormed during my ideation journal.
 
 **Shmup Idea:** A cooperative shoot-em-up where multiple players aim to heal a large ally together to keep it alive against enemy fire and obstacles
