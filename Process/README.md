@@ -44,3 +44,14 @@ During my playtesting, I took note that I should:
 * Add start screen or game over screen
 * Maybe only have the game end when both heroes die or ally dies
 * Balance health/damage more
+
+## 10.28.19: Final iteration
+Here are the features I finished for the final iteration of my shmup:
+* Scrolling background
+* Created new ally model and size
+* Added movement to ally (in the form of a sin wave)
+* Made the heroes (players) different colors (blue for first/left player, red for second/right player)
+* Made the enemies a new color (darker, visual difference from ally)
+
+In the future, these are the features I would still like to implement:
+* Adding a start screen and game over screen
