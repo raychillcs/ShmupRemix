@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 756587965512748101}
   - component: {fileID: 756587965512748100}
   - component: {fileID: 4588348155957706345}
-  m_Layer: 10
-  m_Name: ProjectileHero
-  m_TagString: ProjectileHero
+  m_Layer: 14
+  m_Name: HealProjectile
+  m_TagString: HealProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 098d33a959b0940f0bcd6a0abcc94edb, type: 2}
+  - {fileID: 2100000, guid: aebf818d6ac874f3e8410a890ccf8751, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

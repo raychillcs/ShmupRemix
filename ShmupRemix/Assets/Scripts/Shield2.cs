@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shield : MonoBehaviour
+public class Shield2 : MonoBehaviour
 {
     [Header("Set in Inspector")]
     public float rotationsPerSecond = 0.1f;
@@ -21,7 +21,7 @@ public class Shield : MonoBehaviour
     void Update()
     {
         // Read the current shield level from the Hero Singleton
-        int currLevel = Mathf.FloorToInt(Hero.S.shieldLevel);
+        int currLevel = Mathf.FloorToInt(Hero2.S.shieldLevel);
 
         // If this is different from levelShown...
         if (levelShown != currLevel)

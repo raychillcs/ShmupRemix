@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hero : MonoBehaviour
+public class Hero2 : MonoBehaviour
 {
-    static public Hero S; // Singleton
+    static public Hero2 S; // Singleton
 
     [Header("Set in Inspector")]
     // These fields control the movement of the ship
@@ -31,15 +31,15 @@ public class Hero : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Hero.Awake() - Attempted to assign second Hero.S!");
+            Debug.LogError("Hero2.Awake() - Attempted to assign second Hero2.S!");
         }
     }
 
     void Update()
     {
         // Pull in information from the Input class
-        float xAxis = Input.GetAxis("Horizontal");
-        float yAxis = Input.GetAxis("Vertical");
+        float xAxis = Input.GetAxis("Horizontal2");
+        float yAxis = Input.GetAxis("Vertical2");
 
         // Change transform.position based on the axes
         Vector3 pos = transform.position;
@@ -51,12 +51,12 @@ public class Hero : MonoBehaviour
         transform.rotation = Quaternion.Euler(yAxis * pitchMult, xAxis * rollMult, 270);
 
         // Allow the ship to fire
-        if (Input.GetKeyDown(KeyCode.LeftCommand))
+        if (Input.GetKeyDown(KeyCode.RightCommand))
         {
             TempFire();
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        if (Input.GetKeyDown(KeyCode.RightAlt))
         {
             TempHealFire();
         }
