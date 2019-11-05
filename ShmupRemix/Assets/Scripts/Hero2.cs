@@ -15,6 +15,9 @@ public class Hero2 : MonoBehaviour
     public GameObject projectilePrefab;
     public GameObject healProjectilePrefab;
     public float projectileSpeed = 40;
+    public AudioSource audioSource;
+    public AudioClip damageAudio;
+    public AudioClip healAudio;
 
     [Header("Set Dynamically")]
     [SerializeField]
@@ -33,6 +36,11 @@ public class Hero2 : MonoBehaviour
         {
             Debug.LogError("Hero2.Awake() - Attempted to assign second Hero2.S!");
         }
+    }
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -54,11 +62,13 @@ public class Hero2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightCommand))
         {
             TempFire();
+            audioSource.PlayOneShot(damageAudio);
         }
 
         if (Input.GetKeyDown(KeyCode.RightAlt))
         {
             TempHealFire();
+            audioSource.PlayOneShot(healAudio);
         }
     }
 

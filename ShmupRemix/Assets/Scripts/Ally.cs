@@ -9,6 +9,7 @@ public class Ally : MonoBehaviour
     [Header("Set in Inspector")]
     public float health = 10;
     public float gameRestartDelay = 2f;
+    public AudioSource healedAudio;
 
     // This variable holds a reference to the last triggering GameObject
     private GameObject lastTriggerGo = null;
@@ -65,6 +66,7 @@ public class Ally : MonoBehaviour
         else if (go.tag == "HealProjectile")
         {
             health++;
+            healedAudio.Play();
             Destroy(go);
         }
 

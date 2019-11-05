@@ -12,9 +12,12 @@ public class Hero : MonoBehaviour
     public float rollMult = -45;
     public float pitchMult = 30;
     public float gameRestartDelay = 2f;
+    public float projectileSpeed = 40;
     public GameObject projectilePrefab;
     public GameObject healProjectilePrefab;
-    public float projectileSpeed = 40;
+    public AudioSource audioSource;
+    public AudioClip damageAudio;
+    public AudioClip healAudio;
 
     [Header("Set Dynamically")]
     [SerializeField]
@@ -54,11 +57,13 @@ public class Hero : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftCommand))
         {
             TempFire();
+            audioSource.PlayOneShot(damageAudio);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
             TempHealFire();
+            audioSource.PlayOneShot(healAudio);
         }
     }
 

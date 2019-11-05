@@ -11,11 +11,16 @@ public class Main : MonoBehaviour
     public GameObject[] prefabEnemies; // Array of Enemy prefabs
     public float enemySpawnPerSecond = 0.5f; // # Enemies/second
     public float enemyDefaultPadding = 1.5f; // Padding for position
+    public AudioSource audioSource;
+    public AudioClip startAudio;
+    public AudioClip gameOverAudio;
 
     private BoundsCheck bndCheck;
 
     void Awake()
     {
+        audioSource.PlayOneShot(startAudio);
+
         S = this;
         // Set bndCheck to reference the BoundsCheck component on this GameObject
         bndCheck = GetComponent<BoundsCheck>();
@@ -50,6 +55,8 @@ public class Main : MonoBehaviour
 
     public void DelayedRestart(float delay)
     {
+        audioSource.PlayOneShot(gameOverAudio);
+
         // Invoke the Restart() method in delay seconds
         Invoke("Restart", delay);
     }
