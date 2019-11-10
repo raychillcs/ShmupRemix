@@ -53,8 +53,8 @@ Here are the features I finished for the final iteration of my shmup:
 * Made the heroes (players) different colors (blue for first/left player, red for second/right player)
 * Made the enemies a new color (darker, visual difference from ally)
 * Added sounds for: start game, damage shot, healing shot, when the ally is successfully healed (hit with healing projectile), and game over
+* Added visual of health (health bar) for ally
 
 In the future, these are the features I would still like to implement:
-* Add visual of health (health bar) for ally
-* Create different movement and art for enemies
+* Creating different movement and art for enemies
 * Adding a start screen and game over screen
